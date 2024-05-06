@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>सजिलो सुत्र</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <div class="logo-text">सुत्र</div>
+    </div>
+
+    <div class="wellcome">
+      <anup id="displayname"></anup>
+    </div>
+  </header>
+
+    <section class="section" id="section1">
+      <a href="/neunatamMulyaNikalne.html">
+      <div class="div">
+        <h3>1. घर धुरी करको लागि भौतिक संरचनाको न्युनतम मुल्य निकाल्ने</h3>
+      </div>
+    </a>
+    </section>
+
+
+    <section class="section" id="section2">
+      <a href="/karKoPrakar.html">
+      <div class="div">
+        <h3>2. जग्गामा लाग्ने करको प्रकार आम्सिक या पूर्ण</h3>
+      </div>
+      </a>
+    </section>
+ 
+
+    <section class="section" id="section2">
+        <a href="/nagariktaRelated/index.html">
+        <div class="div">
+          <h3>3. नागरिकता प्रमाण-पत्र (अनुसुची-१)</h3>
+        </div>
+      </a>
+    </section>
+
+    <section class="section" id="section2">
+      <a href="/anuchuchi2/index.html">
+      <div class="div">
+        <h3>3. नागरिकता प्रमाण-पत्रको प्रतिलिपिका लागि (अनुसुची-२)</h3>
+      </div>
+    </a>
+  </section>
+
+  <section class="section" id="section2">
+    <a href="#">
+    <div class="div">
+      <h3></h3>
+    </div>
+  </a>
+</section>
+
+<section class="section" id="section2">
+  <a href="#">
+  <div class="div">
+    <h3></h3>
+  </div>
+</a>
+</section>
+
+
+
+  </main>
+
+
+
+  <footer>@ Anup Dahal dahal6270@gmail.com, all rights reserved.</footer>
+
+  <script>
+            // Retrieve form data from localStorage
+            const formData = JSON.parse(localStorage.getItem('formData'));
+
+// Check if formData exists
+if (formData) {
+    // Access the name from formData
+    const name = formData.name;
+
+    // Display the name in the displayData div
+    document.getElementById('displayname').textContent = `Wellcome ${name} to merosutra`;
+} else {
+    // If formData is not found, display a message
+    document.getElementById('displayname').textContent = "First fill the form.";
+}
+  </script>
+</body>
+</html>

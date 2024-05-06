@@ -1,0 +1,18 @@
+      /* CSS for printing */
+
+      *{
+        font-size: 18px;
+    }
+
+      @media print {
+        body {
+        line-height: normal;
+    }
+    /* .section8{
+      margin-top: 5px;
+    } */
+    
+}    
+    @page {
+      size: A4 portrait;
+    }

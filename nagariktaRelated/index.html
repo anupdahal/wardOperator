@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/nagariktaRelated/index.css">
+</head>
+<body>
+    <div class="cssing">
+    <form id="dataForm">
+<b>        <h3 style="text-align: center;"><u>देहाय बमोजिम फाराम भर्नुहोस</u></h3></b>
+        <h1 style="text-align: center;"><b></b></h1>
+
+        इलाका/ जिल्ला: <input type="text" id="ilika" name="ilika">
+        गौरिगन्ज, झापा/ भद्रपुर, झापा <input type="text" id="jhapa" name="jhapa"><br>
+
+        वंशजको नाताले/ जन्मका आधारले <input type="text" id="inputData1" name="inputData1"><br>
+
+        पुरा नाम, थरः <input type="text" id="inputData2" name="inputData2">      
+
+        Full Name in block: <input type="text"id="inputData3" name="inputData3"><br>
+
+        लिङ्गः <input type="text" id="inputData4" name="inputData4">
+
+        Sex: <input type="text"id="inputData5" name="inputData5"><br>
+
+        पुरा जन्मस्थानः <input type="text" id="inputData6" name="inputData6">
+
+        Place of birth in block: <input type="text" id="inputData7" name="inputData7"> <br>
+
+        जन्ममितीः सालः <input type="text" id="inputData8" name="inputData8">
+        महिनाः <input type="text" id="inputData9" name="inputData9">
+        गतेः <input type="text" id="inputData10" name="inputData10"> <br>
+
+        Date of birth: Year: <input type="text" id="inputData11" name="inputData11">
+        Month: <input type="text" id="inputData12" name="inputData12">
+        Day: <input type="text" id="inputData13" name="inputData13"> <br>
+
+        बाबुको नाम, थरः <input type="text" id="inputData14" name="inputData14"> 
+        ठेगानाः <input type="text" id="inputData15" name="inputData15"> 
+        नागरिकताः <input type="text" id="inputData16" name="inputData16"> <br>
+
+        आमाको नाम, थरः <input type="text" id="inputData17" name="inputData17"> 
+        ठेगानाः <input type="text" id="inputData18" name="inputData18"> 
+        नागरिकताः <input type="text" id="inputData19" name="inputData19"> <br>
+
+        पति/ पत्नीको नाम थरः <input type="text" id="inputData20" name="inputData20"> 
+        ठेगानाः <input type="text" id="inputData21" name="inputData22"> 
+        नागरिकताः <input type="text" id="inputData22" name="inputData23"> <br>
+
+        संरक्षकको नाम, थर र ठेगानाः <input type="text" id="inputData23" name="inputData24"> <br>
+
+        मितीः <input type="text" id="inputData24" name="inputData24"> <br>
+
+        <b><u>नगरपालिकाको सिफारिसका लागि</u></b><br>
+
+        जन्मस्थानः पालिकाः <input type="text" id="inputData25" name="inputData26">
+        वडा नंः <input type="text" id="inputData26" name="inputData27"> <br>
+
+        <input type="text" id="inputData27" name="inputData28"> को 
+        <input type="text" id="inputData28" name="inputData28"> छोरा/ छोरी/ पत्नी <br>
+        वर्षः <input type="text" id="inputData29" name="inputData29"> <br>
+
+        <b><u>सिफारिस गर्ने अध्यक्ष/ कार्यावहाक अध्यक्ष</u></b><br>
+        नाम, थरः <input type="text" id="inputData30" name="inputData30"> <br>
+
+        पदः <input type="text" id="pad" name="pad"> <br>
+
+       <input type="submit" value="Submit">
+       
+       </form>
+       </div>
+
+
+       <script>
+        // Listen for form submission
+            document.getElementById('dataForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+    // Get form data
+    var formData = {
+        data1: document.getElementById('inputData1').value,
+        data2: document.getElementById('inputData2').value,
+        data3: document.getElementById('inputData3').value,
+        data4: document.getElementById('inputData4').value,
+        data5: document.getElementById('inputData5').value,
+        data6: document.getElementById('inputData6').value,
+        data7: document.getElementById('inputData7').value,
+        data8: document.getElementById('inputData8').value,
+        data9: document.getElementById('inputData9').value,
+        data10: document.getElementById('inputData10').value,
+        data11: document.getElementById('inputData11').value,
+        data12: document.getElementById('inputData12').value,
+        data13: document.getElementById('inputData13').value,
+        data14: document.getElementById('inputData14').value,
+        data15: document.getElementById('inputData15').value,
+        data16: document.getElementById('inputData16').value,
+        data17: document.getElementById('inputData17').value,
+        data18: document.getElementById('inputData18').value,
+        data19: document.getElementById('inputData19').value,
+        data20: document.getElementById('inputData20').value,
+        data21: document.getElementById('inputData21').value,
+        data22: document.getElementById('inputData22').value,
+        data23: document.getElementById('inputData23').value,
+        data24: document.getElementById('inputData24').value,
+        data25: document.getElementById('inputData25').value,
+        data26: document.getElementById('inputData26').value,
+        data27: document.getElementById('inputData27').value,
+        data28: document.getElementById('inputData28').value,
+        data29: document.getElementById('inputData29').value,
+        data30: document.getElementById('inputData30').value, 
+        data31: document.getElementById('pad').value, 
+        data100: document.getElementById('ilika').value,
+        data101: document.getElementById('jhapa').value
+    };
+
+    // Store form data in localStorage
+    localStorage.setItem('formData', JSON.stringify(formData));
+
+    console.log("Pad value:", formData.data31);
+    console.log("This is console");
+    
+
+    // Redirect to other_page.html
+    window.location.href = '/nagariktaRelated/second.html';
+});
+
+       </script>
+</body>
+</html>
